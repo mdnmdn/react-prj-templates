@@ -10,7 +10,7 @@ import {
 const SampleCounter = (props) => {
 
     return (<span>
-        [ <button className="btn btn-link"onClick={() => props.incrementCounter()} >+</button>
+        [ <button onClick={() => props.incrementCounter()} >+</button>
         | <button onClick={() => props.decrementCounter()} > - </button>
         | <button onClick={props.resetCounter} >Clear</button> ] 
         : {props.value}
