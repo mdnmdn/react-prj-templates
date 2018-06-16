@@ -4,9 +4,9 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 
-const HomePage = (props) => (
+const Login = (props) => (
     <Layout>
-        Home
+        Login
     </Layout>
 );
 
@@ -17,4 +17,4 @@ const mapDispatchToProps = (dispatch) => bindActionCreators({
 
 }, dispatch);
   
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

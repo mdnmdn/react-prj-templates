@@ -1,12 +1,14 @@
 import React from 'react';
 import Layout from '../layouts/Layout';
+import SampleCounter from './SampleCounter';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 
-const HomePage = (props) => (
+const CounterPage = (props) => (
     <Layout>
-        Home
+        <h1>SampleCounter</h1>
+        <SampleCounter />
     </Layout>
 );
 
@@ -17,4 +19,4 @@ const mapDispatchToProps = (dispatch) => bindActionCreators({
 
 }, dispatch);
   
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps, mapDispatchToProps)(CounterPage);
