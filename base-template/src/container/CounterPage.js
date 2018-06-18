@@ -7,7 +7,8 @@ import { connect } from 'react-redux';
 
 const CounterPage = (props) => (
     <Layout>
-        <h1>SampleCounter</h1>
+        <h1>Sample Counter</h1>
+        
         <SampleCounter />
     </Layout>
 );

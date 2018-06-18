@@ -1,6 +1,7 @@
 import smpleReducer from './sample';
 
 const initialState = {
+    user: {},
     sample: { 
       value: 0,
       message: null,

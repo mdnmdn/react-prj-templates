@@ -6,10 +6,14 @@ const Layout = (props) => (
   <div>
     <h1>Menu</h1>
       <ul>
-    {routes.map(r => <li key={r.label} >
+    {routes(true)
+      .filter(r => r.showInMenu)
+      .map(r => (
+        <li key={r.label} >
                 <Link to={r.path}> {r.iconClass ?
                     <i className={r.iconClass} ></i>: null } {r.label} </Link>
-              </li>)}
+              </li>)
+      )}
       </ul>
     <hr />
     {props.children}
