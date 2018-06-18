@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import HomePage from './container/HomePage'
 import CounterPage from './container/CounterPage'
 import LoginPage from './container/LoginPage';
+import PrivatePage from './container/PrivatePage';
 
 
-const routes = (authorized = true) => [
-
+const routes = (authorized) => [
     {
         label: 'Home',
         component: HomePage,
@@ -25,12 +25,12 @@ const routes = (authorized = true) => [
     },
     {
         label: 'Private',
-        component: HomePage,
-        path: '/',
+        component: PrivatePage,
+        path: '/private',
         exact: true,
         iconClass: 'fa fa-home',
         showInMenu: true,
-        authorized: authorized,
+        authorized: !!authorized,
     },
     {
         label: 'login',

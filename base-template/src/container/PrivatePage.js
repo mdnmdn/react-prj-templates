@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import Layout from '../layouts/Layout';
-import Title from '../components/Title';
+import Title from '../components/common/Title';
 
 const PrivatePage = (props) => (
     <Layout>
